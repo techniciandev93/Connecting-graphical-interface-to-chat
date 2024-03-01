@@ -48,8 +48,8 @@ if __name__ == '__main__':
     env = Env()
     env.read_env()
 
-    chat_host = env.str('HOST')
-    send_message_chat_port = env.str('SEND_MESSAGE_PORT')
+    chat_host = env.str('HOST', 'minechat.dvmn.org')
+    send_message_chat_port = env.str('SEND_MESSAGE_PORT', '5050')
     user_file_path = env.str('USER_FILE_PATH', 'user.json')
 
     root = Tk()
